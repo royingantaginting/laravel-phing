@@ -325,11 +325,21 @@ Generate a code browser for PHP files with syntax highlighting and colored error
             <exclude name="app/filters.php" />
             <exclude name="app/start/" />
         </patternset>
+        
+        <patternset id="ds-api-libs">
+            <exclude name="api/app/library/kaskus.php" />
+            <exclude name="api/client-internal/**/*.*" />
+            <exclude name="api/client-php/**/*.*" />
+        </patternset>
 
         <!-- Javascript files -->
         <patternset id="js">
             <include name="**/*.js" />
             <exclude name="**/*.min.js" />
+        </patternset>
+        
+        <patternset id="ds-js-lib">
+            <exclude name="api/client-js/*.*" />
         </patternset>
 
         <!-- CSS files -->
@@ -369,6 +379,7 @@ Generate a code browser for PHP files with syntax highlighting and colored error
             <patternset refid="bootstrap" />
             <patternset refid="laravel-files" />
             <patternset refid="build-dir" />
+            <patternset refid="ds-api-libs" />
         </fileset>
         
         <fileset id="laravel.model.php" dir="${project.laraveldir}">
@@ -384,6 +395,7 @@ Generate a code browser for PHP files with syntax highlighting and colored error
             <patternset refid="node-modules" />
             <patternset refid="build-dir" />
             <patternset refid="bootstrap-js" />
+            <patternset refid="ds-js-libs" />
         </fileset>
 
         <fileset id="src.css" dir="${project.laraveldir}">
