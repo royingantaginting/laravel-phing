@@ -327,9 +327,9 @@ Generate a code browser for PHP files with syntax highlighting and colored error
         </patternset>
         
         <patternset id="ds-api-libs">
-            <exclude name="api/app/library/kaskus.php" />
-            <exclude name="api/client-internal/**/*.*" />
-            <exclude name="api/client-php/**/*.*" />
+            <exclude name="app/library/kaskus.php" />
+            <exclude name="client-internal/**/*.*" />
+            <exclude name="client-php/**/*.*" />
         </patternset>
 
         <!-- Javascript files -->
@@ -339,7 +339,7 @@ Generate a code browser for PHP files with syntax highlighting and colored error
         </patternset>
         
         <patternset id="ds-js-libs">
-            <exclude name="api/client-js/*.*" />
+            <exclude name="client-js/*.*" />
         </patternset>
 
         <!-- CSS files -->
