@@ -338,7 +338,7 @@ Generate a code browser for PHP files with syntax highlighting and colored error
             <exclude name="**/*.min.js" />
         </patternset>
         
-        <patternset id="ds-js-lib">
+        <patternset id="ds-js-libs">
             <exclude name="api/client-js/*.*" />
         </patternset>
 
